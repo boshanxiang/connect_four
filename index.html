@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+</head>
+<body>
+    <div id="container">
+        <h1><span class="clickable-letter">c</span><span class="clickable-letter">o</span><span class="clickable-letter">n</span><span class="clickable-letter">n</span><span class="clickable-letter">e</span><span class="clickable-letter">c</span><span class="clickable-letter">t</span> <span class="clickable-letter">f</span><span class="clickable-letter">o</span><span class="clickable-letter">u</span><span class="clickable-letter">r</span></h1>
+        <div id="openModalContainer"><button id="openModal">i</button></div>
+        
+        <h3><span id="player1TallyDisplay">-</span>&nbsp;&nbsp;&nbsp;<span id="playerNum1"> red </span>&nbsp;&nbsp;<span id="playerNum2"> blue </span>&nbsp;&nbsp;&nbsp;<span id="player2TallyDisplay">-</span></h3>
+        
+        <div id="play-surface"></div>
+    </div>
+</body>
+<footer>
+    <div id="modal">
+        <div id="modal-textbox">
+            <h2>Game Options</h2>
+            <br>
+            <h4>Play a custom game:</h4>
+                <form id="matrix-input-form">
+                    <input type="text" id="row-input-box" placeholder="How many rows?"/>
+                    <br>
+                    <input type="text" id="column-input-box" placeholder="How many columns?"/>
+                    <br>
+                    <input type="text" id="connect-number-input-box" placeholder="How many to win?"/>
+                    <br>
+                    <input type="submit" class="button" name="submit-matrix-input"/>
+                    <br>
+                </form>
+            <h4>Restart the game series:</h4>
+                <button id="reset-button" class="button">Restart</button>
+            <div id="modal-footer">
+                <a id="close" href="#">Close</a>
+            </div>    
+        </div>
+    </div>
+</footer>
+</html>
